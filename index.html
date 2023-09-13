@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Conversão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/calculator-48x48.png" type="image/x-icon">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Conversão de Números</h1>
+        <form id="conversion-form">
+            <input type="number" id="inputNumber" placeholder="Digite um número">
+            <select id="conversionType">
+                <option value="decimalToBinary">Decimal para Binário</option>
+                <option value="decimalToOctal">Decimal para Octal</option>
+                <option value="decimalToHexadecimal">Decimal para Hexadecimal</option>
+                <option value="binaryToDecimal">Binário para Decimal</option>
+                <option value="binaryToOctal">Binário para Octal</option>
+                <option value="binaryToHexadecimal">Binário para Hexadecimal</option>
+                <option value="octalToDecimal">Octal para Decimal</option>
+                <option value="octalToBinary">Octal para Binário</option>
+                <option value="octalToHexadecimal">Octal para Hexadecimal</option>
+                <option value="hexadecimalToDecimal">Hexadecimal para Decimal</option>
+                <option value="hexadecimalToBinary">Hexadecimal para Binário</option>
+                <option value="hexadecimalToOctal">Hexadecimal para Octal</option>
+            </select>
+        </form>
+        
+        <button onclick="convert()">Converter</button>
+        <button type="button" id="clear-button">Limpar</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <footer>
+        <p class="copy">Desenvolvido por <b>Vitor Geovani Melo Silva</b></p>
+    </footer>
+    <script src="calculadora.js"></script>
+</body>
+</html>
